@@ -1,0 +1,236 @@
+.main__about{
+    background-color: var(--blue2);
+    padding-top: 1.4rem;
+}
+.main__card{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.main__aboutme{
+    background-color: var(--red0);
+    width: 5rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.2rem;
+}
+.main__aboutme p{
+    color: var(--white);
+    font-weight: 900;
+}
+.flipcard {
+    background-color: transparent;
+    width: 350px;
+    height: 180px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  }
+
+  .flipimg{
+      width: 150px;
+      height: 150px;
+      padding-top: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flipcardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+
+  }
+
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flipcard:hover .flipcardinner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flipcardfront, .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flipcardfront {
+    background-color: var(--black);
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .flipcardfront .flipme {
+	position: absolute;
+	left: 77.5%;
+	font-size: 0.6rem;
+	transform: rotate(-90deg);
+}
+.line1 {
+	height: 2px;
+	background: var(--white);
+	position: absolute;
+    top: 85%;
+    left: 82.5%;
+	transform: rotate(-90deg);
+	width: 3rem;
+}
+
+.line2 {
+	height: 2px;
+	background: var(--white);
+	position: absolute;
+    top: 13%;	
+    left: 82.5%;
+	transform: rotate(-90deg);
+	width: 3rem;
+}
+
+  .flipcardfront p{
+    position: absolute;
+    top: 43%;
+    color: var(--white);
+    padding: .8rem 0 .2rem .5rem;
+  }
+
+
+  
+  /* Style the back side */
+  .flipcardback {
+    background-color: var(--black);
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    color: var(--white);
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+  .backtext{
+      padding: 0.6rem;
+  }
+
+  .flipcard .title{
+      color: var(--red0);
+  }
+
+  .flipcard .text{
+      padding-top: 1rem;
+      font-size: 0.7rem;
+  }
+  .main__techtitle{
+      color: var(--red0);
+      font-size: 2rem;
+      padding: 0.5rem 0 3rem 1rem;
+  }
+  .main__techs{
+      display: grid;
+      grid-template-columns: 1rem 1rem 1rem 1rem;
+      grid-template-rows: 7rem 7rem;
+      justify-content: space-around;
+      justify-items: center;
+  }
+
+  .main__techs .icons{
+      color: var(--white);
+      width: 50px;
+      height: 50px;
+  }
+
+
+
+  @media only screen and (min-width: 569px) {
+      .flipcard{
+        width: 450px;
+        height: 220px;
+      }
+      .flipimg{
+        width: 200px;
+        height: 200px;
+    }
+    .line1{
+        width: 4rem;
+        left: 82%;
+    }
+    .line2{
+        width: 3.5rem;
+        top: 12.4%;
+    }
+    .flipcardfront .flipme{
+        font-size: 0.8rem;
+    }
+
+    .flipcardback{
+        font-size: 0.9rem;
+    }
+
+    .flipcardback .text{
+        font-size: 0.8rem;
+    }
+    
+    .main__techs{
+        grid-template-rows: 12rem 12rem;
+    }
+    .main__techs .icons{
+        height: 90px;
+        width: 90px;
+    }
+  }
+
+  @media only screen and (min-width: 1094px) {
+    .flipcard{
+      width: 650px;
+      height: 320px;
+    }
+    .flipimg{
+      width: 300px;
+      height: 300px;
+  }
+  .line1{
+      width: 5.8rem;
+      left: 81%;
+  }
+  .line2{
+      width: 5rem;
+      top: 13.8%;
+  }
+  .flipcardfront .flipme{
+      font-size: 1.1rem;
+      left: 78%;
+  }
+
+  .flipcardback{
+      font-size: 1.5rem;
+  }
+  .backtext{
+      padding: 2rem;
+  }
+
+  .flipcardback .text{
+      font-size: 1.2rem;
+  }
+  
+  .main__techs{
+      grid-template-rows: 14rem 14rem;
+  }
+  .main__techs .icons{
+      height: 110px;
+      width: 110px;
+  }
+  .main__aboutme{
+      font-size: 2.3rem;
+      width: 12rem;
+      padding: 1.5rem 1rem 1.5rem 0.5rem;
+  }
+  .main__about{
+      padding-top: 5rem;
+  }
+  .main__techtitle{
+      font-size: 3rem;
+  }
+}

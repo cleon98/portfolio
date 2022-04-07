@@ -1,5 +1,6 @@
 import React from 'react'
-import Container from './views/container'
+import Container from './views/Container'
+
 
 
 const App = () => {
