@@ -9,21 +9,20 @@ const Contact = () => {
       </div>
       <div className={style.form__cont}>
       <form action="https://formsubmit.co/c.l3on98@gmail.com" id="form" method="post" className={style.form}>
+        <h2>Contact </h2>
       <input type="hidden" name="_next" value="https://portfolio-cristian.netlify.app"/>
       <input type="hidden" name="_captcha" value="false"/>
       <input type="hidden" name="_template" value="table"/>
-        <h2>Contact </h2>
-        <p type="Name:">
-          <input placeholder="Name..."></input>
-        </p>
-        <p type="Email:">
-          <input type='email' placeholder="Email..."></input>
-        </p>
-        <p type="Message:">
-          <textarea placeholder="Message..."></textarea>
-        </p>
+        
+
+          <input type="text" name="name" id="name" placeholder="Name..."></input>
+      
+          <input type="email" name="email" id="email"  placeholder="Email..."></input>
+
+          <textarea name="message" id="message" placeholder="Message..."></textarea>
+
         <div className={style.sendBtn} >
-        <button>SEND</button>
+        <button type="submit" value="Submit">SEND</button>
         </div>
       </form>
       </div>
