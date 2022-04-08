@@ -1,0 +1,86 @@
+.main__cont{
+    padding-top: 1.4rem;
+    background-color: var(--purple0)
+}
+.main__title{
+    background-color: var(--red0);
+    width: 5rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.2rem;
+    color: white;
+}
+.form__cont{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.form{
+    width: 70%;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    border-radius: 3px;
+    line-height: 2rem;
+}
+.form h2{
+    color: var(--red0);
+    font-weight: 900;
+    padding: 1.3rem 0;
+    font-size: 1.5rem ;
+}
+.form input{
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.666);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.form textarea{
+    border: none;
+    resize: none;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.666);
+    width: 100%;
+}
+
+.sendBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.7rem;
+}
+
+.sendBtn button{
+    background-color: var(--red0);
+    border: none;
+    padding: 0.3rem 1.2rem;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sendBtn button:hover{
+    background-color: var(--purple0);
+    color: var(--red0);
+}
+
+@media only screen and (min-width: 659px) {
+    .form{
+        width: 55%;
+    }
+    .sendBtn button{
+        padding: 0.5rem 1.5rem;
+    }
+}
+@media only screen and (min-width: 899px) {
+    .form{
+        padding: 3rem 2.5rem;
+    }
+    .form h2{
+        padding-bottom:2.5rem;
+        padding-top: 0;
+    }
+    .sendBtn{
+        padding-top: 1.5rem;
+    }
+}
