@@ -143,8 +143,11 @@
       height: 50px;
   }
 
-
-
+  @media only screen and (min-width: 518px) {
+      .backtext{
+          font-size: 0.8rem;
+      }
+  }
   @media only screen and (min-width: 569px) {
       .flipcard{
         width: 450px;

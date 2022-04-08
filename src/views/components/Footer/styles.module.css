@@ -32,7 +32,7 @@ section p{
         width: 65px;
         height: 65px;
     }
-    section p{
+    .footertext p{
         font-size: 1.3rem;
     }
     .logos{

@@ -10,7 +10,7 @@ import { SiJavascript, SiReact, SiNodedotjs, SiMysql, SiMongodb, SiGit } from "r
 const AboutMe = () => {
   return (
     <main className={style.main__about}>
-      <section className={style.main__about2}>
+      <div className={style.main__about2}>
         <div className={style.main__aboutme}>
           <p>ABOUT ME</p>
         </div>
@@ -46,7 +46,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <section>
         <h3 className={style.main__techtitle}>Tecnhnologies</h3>
         <div className={style.main__techs}>
