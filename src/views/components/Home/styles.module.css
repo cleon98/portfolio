@@ -25,6 +25,7 @@
     background-color: var(--blue4);
     padding: 0.7rem;
     display: flex;
+    font-size: 3rem;
 }
 .home__body{
     display: flex;

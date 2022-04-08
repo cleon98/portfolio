@@ -1,5 +1,7 @@
 import React from 'react'
 import style from './styles.module.css'
+import { RiGhostSmileLine } from "react-icons/ri";
+
 
 const Home = () => {
   return (
@@ -10,7 +12,7 @@ const Home = () => {
             <p className={style.home__job}>Full-stack developer</p> 
             </div>
             <div className={style.home__menu}>
-            <img src="https://i.imgur.com/3VkYdCU.png" alt="Burger Menu" />
+            <RiGhostSmileLine/>
             </div>
             </section>
             <section className={style.home__body}>
